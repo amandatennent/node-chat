@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chat</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <div class='container'>
+            <div class='row frame'>
+                <div id='username-window' class='col-md-2 usernames'>
+                </div>
+                <div class='col-md-10'>
+                    <div id='message-window' class='messages'>
+                        <p class='system-notice'>Connecting...</p>
+                    </div>
+                    <div class='chat-input'>
+                        <form id='chat_form'>
+                            <input type='text' id='chat_input' />
+                            <input id='chat_submit' class='chat-button' type='submit' value='Send'/>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
